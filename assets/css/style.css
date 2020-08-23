@@ -1,119 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
-body {
-   margin: 0;
-   padding: 0;
-}
-
-h1, h2, h4, a, label{
-   font-family: 'Alata', sans-serif;
-}
-
-h1 {
-   margin-top: 80px;
-}
-
-nav {
-   width: 100%;
-   background-color: #000000;
-   position: fixed;
-   top: 0;
-   z-index: 100;
-}
-
+/* NAV Menu */
 nav ul{
    text-align: center;
    display: flex;
    justify-content: flex-end;
    padding: 0px;
 }
-
 nav a{
    padding: 10px 20px;
    text-decoration: none;
-   color: #ffffff;
+   color: white;
    font-size: 14pt;
 }
-
 nav a:hover{
-   color: aquamarine;
+   color: #0074b9;
 }
+nav {
+   width: 100%;
+   background-color: #D45F68;
+   position: fixed;
+   top: 0;
+   z-index: 100;
+}
+body {
+   margin: 0;
+   padding: 0;
+}
+
+/* SOBRE A GENERATION */
 
 #logoGen{
    width: 70px;
-   height: 30px;
+   height: 40px;
    margin-right: 400px;
+}
+#texto-sobreGen{
+   margin-right: 10px;
 }
 
 #sobreGen{
-   margin-right: 100px;
-   margin-left: 100px;
+   margin-right: 50px;
+   margin-left: 50px;
 }
-
-#bg-sobre{
-   background-image: linear-gradient( rgb(255, 255, 255, 1), rgb(255, 255, 255, 0.2) ), url('https://i.imgur.com/8geMcyw.jpg');
-}
-
 #container-sobreGen{
    display: flex;
    flex-direction: row;
    justify-content: space-around;
    align-items: center;
 }
-
-.text-center{
-   text-align: center;
+.color-sobregen{
+   color: #db6247;
 }
-
-#texto-sobreGen{
-   margin-right: 10px;
+.ml-sobregen {
+   margin-left: 280px;
 }
-
-#video-sobreGen{
-   margin-left: 10px;
-}
-
-#img-react{
-   width: 400px;
-   height: 300px;
-}
-
+/* SOBRE O CURSO */
 #container-sobreCurso{
    display: flex;
    flex-direction: row;
    justify-content: space-around;
    align-items: center;
+   
+}
+#video-sobreGen{
+   margin-left: 10px;
+}
+.color-sobrecur{
+   color: #9d8c09;
+}
+.ml-sobrecurso {
+   margin-left: 220px;
+   margin-block-end: 0px;
+   margin-block-start: 0px ;
 }
 
+
+/* Curriculo do Curso */
+#container-curriculo div{
+   border-style: hidden;   
+   padding: 70px;
+}
+#container-curriculo ul{
+   list-style: none;
+   padding: 0;
+}
 #container-curriculo{
    display: flex;
    flex-direction: row;
    justify-content: space-around;
    align-items: center;
-
 }
-
-#container-curriculo div{
-   border-style: groove;
-   border-color: blue;
-   padding: 15px;
+.color-curriculo{
+   color: #0074b9;
 }
-
-#container-curriculo ul{
-   list-style: none;
-   padding: 0;
-}
-
+/* Mercado de Trabalho */
 #trabalho p{
    text-align: justify;
    margin-left: 200px;
    margin-right: 200px;
 }
 
+
+/* Curriculo do Curso */
+/* Card*/
+.card {
+
+   width: 218px;
+   height: 150px;
+   justify-content: space-around;
+   margin-right: 10px;
+   margin-left: 0px;
+   background-color: rgb(211, 211, 211, 0.2);
+   border-radius: 30px;
+   display: flex;
+   flex-direction: column;
+   box-shadow: 0px 0px 25px -15px;
+   text-align: center;
+   color: #D45F68;
+   font-style: bold;
+   font-size: 22px;
+}
+/* Inscreva-se*/
 #inscrever div.row{
    display: flex;
    flex-direction: column;
-   margin-top: 10px;
+   margin-top: 15px;
 }
 
 #inscrever div.row-2{
@@ -129,21 +141,61 @@ nav a:hover{
    margin-bottom: 50px;
 }
 
-.tm-icone{
-   width: 50px;
-   height: 50px;
+#container-footer{
+   display: flex;
+   justify-content: center;
+}
+
+/* Textos */
+.line{
+   LINE-HEIGHT:30px;
+}
+
+.white{
+   color: white;
+}
+
+h1, h2, h4, a, label{
+   font-family: 'Alata', sans-serif;
+}
+
+h1 {
+   margin-top: 100px;
+   padding: 0px;
+}
+
+.text-center{
+   text-align: center;
+}
+
+.p-15{
+   padding: 15px;
 }
 
 .p-30{
    padding: 30px;
 }
 
-#container-footer{
-   display: flex;
-   justify-content: center;
-}
-
 hr{
    margin-right: 100px;
    margin-left: 100px;
+}
+
+.mb-5 {
+      border-radius: 22px;
+}
+
+.textleft{
+   text-align: left;
+}
+
+/* Imagens */
+#img-react{
+   width: 400px;
+   height: 300px;
+}
+
+.tm-icone{
+   width: 50px;
+   height: 50px;
 }
